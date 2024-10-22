@@ -2,14 +2,7 @@ const d = {
   "list": [
     /*=================================================================================*/
         {
-            "vids": [
-              {
-                "user": "Speedy",
-                "link": "https://www.youtube.com/watch?v=hqokP172p9k",
-                "percent": 100,
-                "hz": "240hz"
-              },
-            ],
+            "vids": [],
             "name": "COSMIC",
             "author": "Lells [Speedy]",
             "more": "none",
