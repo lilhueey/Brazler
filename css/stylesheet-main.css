@@ -26,7 +26,7 @@ header{
   font-size: 1.3em;
 }
 #list{
-  background: rgb(25, 24, 101);
+  background: rgb(28, 27, 31);
   position: fixed;
   top: 100px;
   left: 0;
@@ -34,7 +34,7 @@ header{
   overflow-y: auto;
 }
 #additional-information{
-  background: rgb(25, 24, 101);
+  background: rgb(28, 27, 31);
   position: fixed;
   top: 100px;
   right: 0;
@@ -42,7 +42,7 @@ header{
   overflow-y: auto;
 }
 #info{
-  background: rgb(40, 39, 80);
+  background: rgb(28, 27, 31);
   position: fixed;
   top: 100px;
   left: 30%;
@@ -57,19 +57,19 @@ header{
 
 }
 .entry:nth-child(odd){
-  background: rgb(55, 54, 101);
+  background: rgb(28, 27, 31);
 }
 .entry:hover{
-  border: rgb(97, 95, 179) solid 2px;
+  border: rgb(28, 27, 31) solid 2px;
  /*  background: rgb(34, 34, 34); */
   cursor: pointer;
   color:rgb(0, 0, 0) !important;
 }
 
-A:hover {color:rgb(97, 95, 179) !important; text-decoration:none; }
+A:hover {color:rgb(28, 27, 31) !important; text-decoration:none; }
 
 .selected{
-  background: rgb(39, 37, 153) !important;
+  background: rgb(28, 27, 31) !important;
 }
 .author{
   font-variant: small-caps;
@@ -116,10 +116,10 @@ A:hover {color:rgb(97, 95, 179) !important; text-decoration:none; }
   padding: 0.5em;
 }
 .record-entry:nth-child(even){
-  background: rgb(55, 54, 101)
+  background: rgb(28, 27, 31)
 }
 .record-entry:nth-child(odd){
-  background: rgb(55, 54, 101)
+  background: rgb(28, 27, 31)
 }
 #block{
   position: fixed;
