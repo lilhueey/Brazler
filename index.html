@@ -58,7 +58,7 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
                         <hr>
                         <div id="records-title"><strong>Recordes</strong></div><br>
                         <div id="qualification"><strong id="levelqualify"></strong>% ou mais necessário para qualificar<br><br>
-                            <center><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSca6us5aKwSvFaqQdMmmSX6rialGS5gw9wBW6X87IlEsRK0Sg/viewform">> Enviar Recorde <</a></center>
+                            <center><a target="_blank" href="https://forms.gle/TvDr8tbGk6Hh9ZsP9">> Enviar Recorde <</a></center>
                         </div>
                         <br>
                     </center>
@@ -70,6 +70,7 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
         </div>
         <div id="additional-information">
             <div id="inner-right-info">
+                <div><strong>Você tem um recorde para enviar? Ou colocaram seu recorde incorretamente? <u><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSca6us5aKwSvFaqQdMmmSX6rialGS5gw9wBW6X87IlEsRK0Sg/viewform">Envie seu recorde!</a></u></strong></div>
                 <br>
                 <div>
                   Editores da Lista:
@@ -77,8 +78,8 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
                     <i class="fas fa-crown"></i>  <a href="https://www.youtube.com/@hhuueeyy">Huey</a>
                     </li>
                     <li>
-                	<i class="fas fa-crown"></i>  <a href="https://www.youtube.com/@Reyotte">Reyotta</a>
-                	</li>
+                        <i class="fas fa-"></i>  <a href="https://www.youtube.com/@Reyotte">Reyotta</a>
+                        </li>
                     <li>
                     <i class="fas fa-code"></i>  <a href="http://electroflame.me">Electro (Programador da lista)</a>
                     </li>
@@ -87,7 +88,16 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
                 <div>
                     
                     <br><br>
-                    <center><a target="_blank" href="https://docs.google.com/document/d/12oPwMPY9iUxbXxhjzaC1FJVfyH8rH90_c9Vfw3SJDjk/edit?usp=sharing">Você pode enviar um recorde desde que siga esses padrões.</a></center>
+                    Você pode enviar um recorde desde que siga esses requisitos:
+                    <ul>
+                        <li>Conseguiu o recorde sem usar hacks (com a única exceção do FPS Bypass, com o limite máximo de 360fps)</li>
+                        <li>Conseguiu o recorde no nível listado no site - favor checar o ID do nível antes de enviar um recorde</li>
+                        <li>Ter som de cliques ou toques. Áudio editado apenas não conta</li>
+                        <li>A gravação deverá ter a tentativa anterior e a animação de morte inteira antes da completion, a não ser que passe do nível na primeira tentativa. Gravações do Everyplay são uma exceção</li>
+                        <li>Não usar rotas swag ou secret ways</li>
+                        <li>Não use versões mais faceis, apenas recordes nas versões não-modificadas (exceção a ULDMs) se qualificam</li>
+                        <li>Quando um nível cair para a Legacy, aceitamos recordes até 24 horas após ele cair, mas depois de um dia não aceitamos mais recordes para o nível</li>
+                    </ul><br>
                     <br>
                     <p>
                     Changelog:
@@ -244,7 +254,7 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
     var rank = `<ol>`;
     for (var i = 0; i < rank_data.length; i++) {
         sc = `getUserData(${i})`;
-        rank = `${rank} <span onclick="${sc}" style="cursor:pointer">${i+1}. ${rank_data[i].name} : ${rank_data[i].point} <i class="fas fa-arrow-circle-right"></i>  </span><br>`;
+        rank = `${rank} <span onclick="${sc}" style="cursor:pointer">${i+1}. ${rank_data[i].name} : ${rank_data[i].point} ➦</span><br>`;
     }
     rank = `${rank} </ol>`;
     rank_node.html(`${rank}`);
@@ -311,7 +321,7 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
                     .replace(/https:\/\//gi, '')
             }
             var rank = 0;
-            if (entry.key == undefined) {
+            if (entry.key == null) {
                 rank = 150 + (legacy_count - entry.legacyKey);
             } else {
                 rank = (entry.key) + 1;
@@ -324,7 +334,7 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
                     hacked = " <span class='p-hacked'>POSSIVELMENTE HACKEADO</span>";
                 }
             }
-            $("#levelname").html(isNaN(rank) ? `${entry.name}${hacked}` : `#${rank} ${entry.name}${hacked}`);
+            $("#levelname").html((rank > 150 ? `` : `#` + rank + ` `) + entry.name + hacked);
             var author = entry.author;
             var final_author;
             if (author.includes(' more ')) {
@@ -342,9 +352,9 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
                 $("#levelvid").html(`<hr><iframe class="vid" height="300" src="https://www.youtube.com/embed/${entry.verificationVid}?rel=0" frameborder="0" allowfullscreen></iframe>`);
             }
             $("#levelqualify").text(entry.percentToQualify);
-            $("#records-score").html(`<strong>Pontos ganhos quando completado : ${getPoint(rank)}</strong>`);
-            $("#records-id").html(`<strong>ID do nível : ${entry.id}</strong>`);
-            $("#records-pass").html(`<strong>Senha do nível : ${entry.pass}</strong>`);
+            $("#records-score").html(`<strong>Pontos quando completado : ${getPoint(rank)}</strong>`);
+            $("#records-id").html(`<strong>ID : ${entry.id}</strong>`);
+            $("#records-pass").html(`<strong>Senha para copiar : ${entry.pass}</strong>`);
             $("#inside-level-author").html(final_author);
             $(record_node).empty();
             entry.vids.sort(function(a, b) {
@@ -382,9 +392,10 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
     </script>
     <noscript>
         <div id="block">
-            You are not using JavaScript
+            Você não está usando JavaScript.
         </div>
     </noscript>
 </body>
+
 
 </html>
