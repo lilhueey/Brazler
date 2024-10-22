@@ -24,9 +24,9 @@ header{
 #pc-link{
   position: fixed;
   text-align: right;
-  top: 31px;
+  top: 15px;
   right: 30px;
-  font-size: 2em;
+  font-size: 4em;
 }
 #list{
   background: rgb(28, 27, 31);
