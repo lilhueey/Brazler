@@ -128,12 +128,12 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
                 }
                 /* 마우스로 클릭하는 순간 */
                 A:hover {
-                    color: rgba(255, 255, 255, 0.5) !important;
+                    color: rgba(255,255, 255, 0.5) !important;
                     text-decoration: none;
                 }
                 /* 마우스 링크 위 올려 놓았을때 */
                 </style>
-                <center><strong>Tabelas de Classificação</strong></center>
+                <center><strong>Tabela de Classificação</strong></center>
                 <div id="user-rank"></div>
             </div>
         </div>
@@ -254,7 +254,7 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
     var rank = `<ol>`;
     for (var i = 0; i < rank_data.length; i++) {
         sc = `getUserData(${i})`;
-        rank = `${rank} <span onclick="${sc}" style="cursor:pointer">${i+1}. ${rank_data[i].name} : ${rank_data[i].point} ➦</span><br>`;
+        rank = `${rank} <span onclick="${sc}" style="cursor:pointer">${i+1}. ${rank_data[i].name} : ${rank_data[i].point} <i class="fas fa-arrow-circle-right"></i>  </span><br>`;
     }
     rank = `${rank} </ol>`;
     rank_node.html(`${rank}`);
@@ -321,7 +321,7 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
                     .replace(/https:\/\//gi, '')
             }
             var rank = 0;
-            if (entry.key == null) {
+            if (entry.key == undefined) {
                 rank = 150 + (legacy_count - entry.legacyKey);
             } else {
                 rank = (entry.key) + 1;
@@ -334,7 +334,7 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
                     hacked = " <span class='p-hacked'>POSSIVELMENTE HACKEADO</span>";
                 }
             }
-            $("#levelname").html((rank > 150 ? `` : `#` + rank + ` `) + entry.name + hacked);
+            $("#levelname").html(isNaN(rank) ? `${entry.name}${hacked}` : `#${rank} ${entry.name}${hacked}`);
             var author = entry.author;
             var final_author;
             if (author.includes(' more ')) {
@@ -352,9 +352,9 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
                 $("#levelvid").html(`<hr><iframe class="vid" height="300" src="https://www.youtube.com/embed/${entry.verificationVid}?rel=0" frameborder="0" allowfullscreen></iframe>`);
             }
             $("#levelqualify").text(entry.percentToQualify);
-            $("#records-score").html(`<strong>Pontos quando completado : ${getPoint(rank)}</strong>`);
-            $("#records-id").html(`<strong>ID : ${entry.id}</strong>`);
-            $("#records-pass").html(`<strong>Senha para copiar : ${entry.pass}</strong>`);
+            $("#records-score").html(`<strong>Pontos quando completado: ${getPoint(rank)}</strong>`);
+            $("#records-id").html(`<strong>ID do nível: ${entry.id}</strong>`);
+            $("#records-pass").html(`<strong>Senha do nível: ${entry.pass}</strong>`);
             $("#inside-level-author").html(final_author);
             $(record_node).empty();
             entry.vids.sort(function(a, b) {
@@ -396,6 +396,5 @@ document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getEle
         </div>
     </noscript>
 </body>
-
 
 </html>
