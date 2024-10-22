@@ -7,13 +7,13 @@ const d = {
                 "user": "Speedy",
                 "link": "https://www.youtube.com/watch?v=hqokP172p9k",
                 "percent": 100,
-                "hz": "144Hz"
+                "hz": "240Hz"
               },
               {
                 "user": "Jaylezx",
                 "link": "https://www.youtube.com/watch?v=cb1ymZdf74I",
                 "percent": 100,
-                "hz": "144Hz"
+                "hz": "240Hz"
               },
             ],
             "name": "COSMIC",
