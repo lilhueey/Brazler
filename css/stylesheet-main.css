@@ -1,6 +1,8 @@
 *{
-  font-family: '', sans-serif;
-  color: rgb(0, 0, 0) !important;
+  font-family: "Lexend Deca", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 header{
