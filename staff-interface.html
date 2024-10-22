@@ -1,0 +1,557 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Geometry Dash Brazler List</title>
+        <link rel="shortcut icon" href="https://vignette.wikia.nocookie.net/geometry-dash-fan/images/4/48/Hard_Demon.png/revision/latest?cb=20171009194744"
+	 type="image/x-icon">
+        <meta id="meta-title" property="og:title" content="Brazler List">
+        <meta id="meta-desc" property="og:description" content="Conjunto de níveis escolhidos pelo nosso Mestre  Reyotta.">
+        <meta id="meta-image" name="og:image" itemprop="image" content="https://cdn.discordapp.com/attachments/1271578835451641920/1295981453019975711/724_Sem_Titulo_20241015044407.png">
+        <meta name="viewport" content="user-scalable=no">
+        <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link href="/fontawesome/css/all.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <p id="title"><b>GD Brazler List</b> <i>(v2.0.0)</i></p>
+            <button type="button" id="info-button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#infoModal"><span class="bi bi-info-circle-fill"></span></button>
+            <!-- The Modal -->
+            <div class="modal" id="infoModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Informações da Brazler</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <a href="https://discord.gg/V5URUPxqsd"><strong>Discord Oficial  </strong></a><i class="fab fa-discord"></i> (tem uma cópia dessa informação)<br><br>
+                    A Brazler List é uma lista que acolhe níveis e os ranqueia baseado em dificuldade e padrões. Você pode enviar um recorde desde que siga esses requisitos:
+                    <ul>
+                        <li>Conseguiu o recorde sem usar hacks (com a única exceção do FPS Bypass, com o limite máximo de 360fps)</li>
+                        <li>Conseguiu o recorde no nível listado no site - favor checar o ID do nível antes de enviar um recorde</li>
+                        <li>Ter som de cliques ou toques. Áudio editado apenas não conta</li>
+                        <li>A gravação deverá ter a tentativa anterior e a animação de morte inteira antes da completion, a não ser que passe do nível na primeira tentativa. Gravações do Everyplay são uma exceção</li>
+                        <li>Não usar rotas swag ou secret ways</li>
+                        <li>Não use versões mais faceis, apenas recordes nas versões não-modificadas (exceção a ULDMs) se qualificam</li>
+                        <li>Quando um nível cair para a Legacy, aceitamos recordes até 24 horas após ele cair, mas depois de um dia não aceitamos mais recordes para o nível</li>
+                    </ul>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" id="team-button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#teamModal"><span class="bi bi-person-circle"></span></button>
+            <!-- The Modal -->
+            <div class="modal" id="teamModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Esse pessoal é fera, ajuda a lista continuar viva:
+                    <li>
+                    <i class="fas fa-crown"></i>  <a href="https://www.youtube.com/@hhuueeyy">Huey</a>
+                    </li>
+                    <li>
+                    <i class="fas fa-crown"></i>  <a href="https://www.youtube.com/@Reyotte">Reyotta</a>
+                    </li>       
+                    <li>
+                    <i class="fas fa-code"></i>  <a href="http://electroflame.me">Electro (programador da lista)</a>
+                    </li>
+                    <li>
+                    <i class="fas fa-code"></i>  <a href="https://www.youtube.com/c/PrometheusCoding/">Prometheus</a>
+                    </li>
+                      <small>(Prometheus reprogramou o UI do website)</small><br>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container-fluid row bg-light">
+            <!-- Include href to table for list item #1 -->
+            <div class="col-4 bg-light"><a href="#list-1">Main List</a></div>
+            <!-- Include href to table for list item #76 -->
+            <div class="col-4 bg-grey"><a href="#list-76">Extended List</a></div>
+            <!-- Include href to table for list item #151 -->
+            <div class="col-4 bg-light"><a href="#list-151">Legacy List</a></div>
+        </div>
+        <div class="list-container">
+          <div class="mt-2 p-2 bg-light text-black rounded list-entry" id="list-1">
+            <div class="thumb ratio-16-9 js-delay-css player" style="background-image: url(&quot;https://i.ytimg.com/vi/9YYQBbrsV5Y/mqdefault.jpg&quot;);" data-property="background-image" data-property-value="url('https://i.ytimg.com/vi/hqokP172p9k/mqdefault.jpg')"><a class="play" href="https://www.youtube.com/watch?v=hqokP172p9k"></a></div>
+            <table style="display:inline-block;position:relative; height:90px; margin-left:20px;">
+                <tr>
+                    <td><h1 data-bs-toggle="modal" data-bs-target="#list-1-Modal">#1 - COSMIC</h1></td>
+                </tr>
+                <tr>
+                    <td><h5>Lells [SpeedyYT_2449]</h5></td>
+                </tr>
+            </table>
+        </div>
+        <div id="discordserver">
+          <iframe id="widget" src="https://ptb.discord.com/widget?id=713151800932433972&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" style="height:calc(100vh - 360px);"></iframe>
+          <div id="pc-link" style="font-size:30px;text-align:center;line-height:80px;color:white;border-radius:5px;">
+              <a href="https://discord.gg/V5URUPxqsd" style="color:white;text-decoration:none;"><strong>Entre no servidor do Discord</strong></a>&nbsp;<em><i class="fab fa-discord"></i></em>
+          </div>
+        </div>
+            <style>
+                .list-container{
+                    overflow:hidden;
+                }
+                #discordserver{
+                    position:fixed;
+                    right:calc(25vw - 315px);
+                    height:calc(100vh - 260px);
+                    top:100px;
+                }
+                #pc-link{
+                    width:100%;
+                    height:80px;
+                    top:0px;
+                    position:relative;
+                    background-color:#7289da;
+                }
+                @media only screen and (max-width: 1260px){
+                    #discordserver{
+                        display:none;
+                    }
+                }
+            </style>
+        <!-- The Modal -->
+            <div class="modal" id="list-1-Modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">COSMIC (por Lells e Ashrune)</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <h4 class="modal-title">Verificado por SpeedyYT_2449</h4>
+                    <br>
+                    <div class="video-container">
+                        <iframe width="400" height="225" src="https://www.youtube.com/watch?v=hqokP172p9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <table>
+                        <tr class="row">
+                          <td class="col-3"><b>ID do nível</b></td>
+                          <td class="col-3"><b>Senha do nível</b></td>
+                          <td class="col-3"><b>Pontos ganhos por passar</b></td>
+                          <td class="col-3"><b>Porcentagem para recordes</b></td>
+                        </tr>
+                        <tr class="row">
+                          <td class="col-3">110176794</td>
+                          <td class="col-3">696969</td>
+                          <td class="col-3">96.032</td>
+                          <td class="col-3">60%</td>
+                        </tr>
+                        <tr class="row">
+                          <td colspan="4" class="col-12"><b><center>ID da versão LDM</center></b></td>
+                        </tr>
+                        <tr class="row">
+                          <td colspan="4" class="col-12"><center>Não Aplicável</center></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div class="table-responsive" style="height:40%;">
+                        <!-- Editable table -->
+                      <div class="card">
+                        <div class="card-body">
+                          <div id="table" class="table-editable">
+                            <span class="table-add float-right mb-3 mr-2"
+                              ><a href="#!" class="text-success"
+                                ><i class="fas fa-plus" aria-hidden="true"></i></a
+                                > <span style="font-size:3vh;line-height:4vh;">Adicionar um Recorde</span></span>
+                            <table class="table table-bordered table-responsive-md table-striped text-center" style="font-size:min(2vw, 15px);">
+                              <thead>
+                                <tr>
+                                  <td class="text-center" style="width:40%;">Recordista</td>
+                                  <td class="text-center" style="width:10%;">Porcentagem</td>
+                                  <td class="text-center" style="width:10%">Passou em</td>
+                                  <td class="text-center">Classificar</td>
+                                  <td class="text-center">Remover</td>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td contenteditable="true">Speedy</td>
+                                  <td contenteditable="true">100%</td>
+                                  <td contenteditable="true">240hz</td>
+                                  <td>
+                                    <span class="table-up"
+                                      ><a href="#!" class="indigo-text"
+                                        ><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a
+                                    ></span>
+                                    <span class="table-down"
+                                      ><a href="#!" class="indigo-text"
+                                        ><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a
+                                    ></span>
+                                  </td>
+                                  <td>
+                                    <span class="table-remove"
+                                      ><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">
+                                        <i class="bi bi-trash"></i>
+                                      </button></span
+                                    >
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <script>
+                      const $tableID = $('#table'); const $BTN = $('#export-btn'); const $EXPORT = $('#export');
+                      const newTr = `
+                      <tr class="hide">
+                        <td class="pt-3-half" contenteditable="true">Example</td>
+                        <td class="pt-3-half" contenteditable="true">Example</td>
+                        <td class="pt-3-half" contenteditable="true">Example</td>
+                        <td class="pt-3-half" contenteditable="true">Example</td>
+                        <td class="pt-3-half" contenteditable="true">Example</td>
+                        <td class="pt-3-half">
+                          <span class="table-up"
+                            ><a href="#!" class="indigo-text"
+                              ><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a
+                          ></span>
+                          <span class="table-down"
+                            ><a href="#!" class="indigo-text"
+                              ><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a
+                          ></span>
+                        </td>
+                        <td>
+                          <span class="table-remove"
+                            ><button
+                              type="button"
+                              class="btn btn-danger btn-rounded btn-sm my-0 waves-effect waves-light"
+                            >
+                              Remove
+                            </button></span
+                          >
+                        </td>
+                      </tr>`;
+                      $('.table-add').on('click', 'i', () => { const $clone = $tableID.find('tbodytr').last().clone(true).removeClass('hide table-line'); if ($tableID.find('tbody tr').length === 0) { $('tbody').append(newTr); } $tableID.find('table').append($clone); });
+                      $tableID.on('click', '.table-remove', function () { $(this).parents('tr').detach(); });
+                      $tableID.on('click', '.table-up', function () { const $row = $(this).parents('tr');
+                      if ($row.index() === 0)
+                        {
+                          return;
+                        }
+                      $row.prev().before($row.get(0)); }); $tableID.on('click', '.table-down', function () { const $row = $(this).parents('tr');
+                      $row.next().after($row.get(0)); }) = [].pop; jQuery.fn.shift = [].shift; $BTN.on('click', () => { const $rows = $tableID.find('tr:not(:hidden)'); const headers = []; const data = []; // Get the headers (add special header logic here)
+                      $($rows.shift()).find('th:not(:empty)').each(function () { headers.push($(this).text().toLowerCase()); }); // Turn all existing rows into a loopable array
+                      $rows.each(function () { const $td = $(this).find('td'); const h = {}; // Use the headers from earlier to name our hash keys
+                      headers.forEach((header, i) => { h[header] = $td.eq(i).text(); }); data.push(h); }); // Output the result
+                      $EXPORT.text(JSON.stringify(data)); });
+                      </script>
+                      <!-- Editable table -->
+                    </div>
+                    
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Statsviewer -->
+        <!-- Offcanvas Sidebar -->
+        <div class="offcanvas offcanvas-end" id="demo">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Statsviewer</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Tabela das pessoas com mais pontos na lista.</p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Name of user" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button">Pesquisar</button>
+              </div>
+            </div>
+            <ol class="list-group list-group-numbered" id="stats-viewer">
+                <li class="list-group-item user-points">Speedy (96.032 pontos)</li>
+            </ol>
+            <script>
+                    let addable = new Array();
+                    let statsviewer = document.getElementById("stats-viewer");
+                    let users = statsviewer.children;
+                    for (let count=0; count<users.length; count++){
+                        let user = users[count];
+                        user.setAttribute("data-bs-toggle","modal");
+                        user.setAttribute("data-bs-target",`#user-${count}-Modal`);
+                        let newmodal = `<!-- The Modal -->
+            <div class="modal" id="user-${count}-Modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">${user.textContent}</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <!-- Oh, and all of these don't have URLs, but I believe in you Electro! :D -->
+                  <div class="modal-body">
+                    <ul>
+                        <li>Shitty Stygian Machinery Verified (#40 / UP:40.371)</li>
+                        <li>Shitty Sigma 100% (#1 / UP:100)</li>
+                        <li>Shitty Anemesis 100% (#2 / UP:96.735)</li>
+                        <li>Shitty Visible Ray 100% (#3 / UP:93.674)</li>
+                        <li>Shitty super probably level 100% (#7 / UP:83.104)</li>
+                    </ul>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>`;
+                        addable.push(newmodal);
+                    }
+                let whattoadd = addable.join("\n");
+                document.body.innerHTML += whattoadd;
+            </script>
+          </div>
+        </div>
+        <div class="offcanvas offcanvas-end" id="addmenu">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Adicionar um nível</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="form-inline" action="/action_page.php">
+                <div class="form-group">
+                    <label for="name">Nome do nível:</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="author">Autor(es):</label>
+                    <input type="text" class="form-control" id="author">
+                </div>
+                <div class="form-group">
+                    <label for="verifier">Verificador:</label>
+                    <input type="text" class="form-control" id="verifier">
+                </div>
+                <div class="form-group">
+                    <label for="link">Vídeo de verificação:</label>
+                    <input type="url" class="form-control" id="link">
+                </div>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-5"><label for="placement">Colocação::</label></div>
+                        <div class="col-4"><input type="number" class="form-control" id="placement" min="1" max="150"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><label for="requirement">Porcentagem p/ recordes:</label></div>
+                        <div class="col-4"><input type="number" class="form-control" id="requirement" min="1" max="100"></div>
+                    </div>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+        <!-- Button to open the offcanvas sidebar -->
+        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#addmenu" id="addbutton"><i class="bi bi-plus"></i></button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" id="statsbutton">
+          <i class="fas fa-trophy"></i>
+        </button>
+        <style>
+            #title{
+                position:static;
+                top:2vh;
+                font-size:32px;
+            }
+            .container-fluid{
+                border:1px solid black;
+            }
+            .col-4{
+                text-align:center;
+            }
+            .row{
+                margin-left:0px;
+            }
+            .bg-grey{
+                background-color: #eee;
+            }
+            .player{
+                display:inline-block;
+            }
+            .thumb{
+                position: relative;
+                height: 90px;
+                width: 160px;
+                background-size: contain;
+            }
+            .play{
+                background: #536778;
+                border-radius: 50% / 10%;
+                color: #ffffff;
+                font-size: 0.5em;
+                height: 3em;
+                padding: 0;
+                position: absolute;
+                text-align: center;
+                text-indent: 0.1em;
+                transition: all 150ms ease-out;
+                width: 4em;
+                opacity: 0.8;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .play::before{
+                background: inherit;
+                border-radius: 5% / 50%;
+                bottom: 9%;
+                content: "";
+                left: -5%;
+                position: absolute;
+                right: -5%;
+                top: 9%;
+            }
+            .play::after{
+                border-style: solid;
+                border-width: 1em 0 1em 1.732em;
+                border-color: transparent transparent transparent rgba(255, 255, 255, 0.75);
+                content: " ";
+                font-size: 0.75em;
+                height: 0;
+                margin: -1em 0 0 -0.75em;
+                top: 50%;
+                position: absolute;
+                width: 0;
+            }
+            .play:hover{
+                background-color: orange;
+            }
+            .list-entry{
+                width:min(684px, 96vw);
+                margin-left: max(0px, calc(48vw - 342px));
+                display:flex;
+            }
+            h1{
+                font-size:min(4vw, 35px);
+            }
+            h5{
+                font-size:min(2.5vw, 20px);
+            }
+            #info-button{
+                position: absolute;
+                top:15px;
+                right:15px;
+            }
+            #team-button{
+                position:absolute;
+                top:15px;
+                right:65px;
+            }
+            a{
+                color:black;
+            }
+            .col-4 > a{
+                text-decoration: none;
+            }
+            .col-4 > a:hover{
+                cursor: pointer;
+                color:darkgray;
+            }
+            h1{
+                font-size: min(30px, 6vw);
+            }
+            h1:hover{
+                cursor: pointer;
+            }
+            .video-container {
+                display:flex;
+                justify-content:center;
+            }
+            table{
+                width:100%;
+            }
+            .name{
+                width:60%;
+            }
+            .detail{
+                width:20%;
+            }
+            .ratio-16-9{
+                height:100px;
+                width:270px;
+                background-repeat: no-repeat;
+            }
+            #statsbutton{
+                position:fixed;
+                bottom:25px;
+                right:25px;
+                border-radius: 50%;
+                height: calc(8px + min(60px, 12vw));
+                width: calc(8px + min(60px, 12vw));
+            }
+            #addbutton{
+                position:fixed;
+                bottom: calc(35px + min(60px, 12vw));
+                right:25px;
+                border-radius: 50%;
+                height: calc(8px + min(60px, 12vw));
+                width: calc(8px + min(60px, 12vw));
+            }
+            #stats-viewer{
+                max-height:calc(100vh - 220px);
+                border:1px solid;
+                overflow:scroll;
+            }
+            .user-points:hover{
+                background-color: #e0e0e0;
+                cursor: pointer;
+            }
+            .fa-trophy{
+                font-size:min(30px, 6vw);
+            }
+            .bi-plus{
+                font-size:min(60px, 12vw);
+                line-height: 0px;
+                display:block;
+                position:relative;
+                left:-9px;
+            }
+            .red{
+                color:red;
+                cursor:pointer;
+            }
+        </style>
+    </body>
+</html>
