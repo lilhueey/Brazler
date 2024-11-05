@@ -82,7 +82,7 @@ header{
   border: rgb(28, 27, 31) solid 2px;
  /*  background: rgb(34, 34, 34); */
   cursor: pointer;
-  color:rgb(0, 0, 0) !important;
+  color:rgb(255, 255, 255) !important;
 }
 
 A:hover {color:rgb(28, 27, 31) !important; text-decoration:none; }
